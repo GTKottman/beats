@@ -50,23 +50,43 @@ let hum =
     .jux(rev)
     .lpf(sine.range(120, 350).slow(12))
 
+let funkKit =
+  stack(
+    sound("[bd ~ [~ bd] ~] [~ bd ~ bd]")
+      .bank("RolandTR808")
+      .gain(0.8),
+    sound("~ sd ~ sd")
+      .bank("RolandTR808")
+      .gain("0.7 0.75 0.7 0.8"),
+    sound("[sd sd sd sd]*2")
+      .bank("RolandTR808")
+      .gain("0.18 0.22 0.15 0.2 0.18 0.2 0.15 0.22"),
+    sound("hh*8")
+      .bank("RolandTR808")
+      .gain(".35 .7 .35 .7 .35 .7 .35 .7")
+  )
+
 stack(
   arrange(
-    [2, silence],
+    [1, silence],
     [999, hum]
   ),
   arrange(
-    [4, melodyintro],
-    [4, melodyintro2],
-    [8, melody],
-    [4, melodyintro2],
-    [4, melodyintro]
+    [2, melodyintro],
+    [2, melodyintro2],
+    [4, melody],
+    [2, melodyintro2],
+    [2, melodyintro]
+  ),
+  arrange(
+    [2, silence],
+    [2, drums],
+    [2, drums2],
+    [4, drums2by2],
+    [999, drums4by2]
   ),
   arrange(
     [4, silence],
-    [4, drums],
-    [4, drums2],
-    [8, drums2by2],
-    [999, drums4by2]
+    [999, funkKit]
   )
 )

@@ -105,3 +105,7 @@ stack(
 - Change the bass line `"<A1 [A1 G1] F1 [E1 A1]>"` to taste
 - Remove `.mask("<~ x>/8")` on the lead to let it rip from bar 1
 - Add `.pianoroll()` at the end to see the notes visually
+
+
+
+

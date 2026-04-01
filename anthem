@@ -1,0 +1,19 @@
+stack(
+  // Harmonically, move to an F minor 9 arpeggio to fit the Phrygian scale and add emotional/epic flavor
+  note("<F4 G4 Ab4 C5 Eb5 G4 Ab4 F4 Eb4 C5 Ab4 G4 F4 Eb4 C5 Ab4 G4>*4")
+    .s("piano")
+    .attack(.006)
+    .decay(.21)
+    .sustain(.09)
+    .gain(.20),
+
+  // Phrygian riff with neighbor notes and a little melodic chromaticism for tension
+  "0 ~ 1 0 ~ 4 3 ~ [7 6] ~ 3 1 ~ [0 4] ~"
+    .scale('F4 phrygian')
+    .note()
+    .struct("x ~ [x x] ~ x ~ x [~ x] ~ x x ~ [x x] ~")
+    .s('triangle')
+    .attack(.008).decay(.19).sustain(.04)
+    .room(.33)
+    .gain(.17)
+)
