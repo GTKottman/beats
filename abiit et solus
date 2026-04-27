@@ -1,0 +1,81 @@
+$: stack(
+  // left hand: low bass motion
+  note(`
+    g1 ~ g2 d2
+    c2 ~ c3 g2
+    d2 ~ d3 a2
+    g1 ~ d2 g2
+    d#2 ~ a#2 d#3
+    c2 ~ g2 c3
+    d2 ~ f#2 a2
+    g1 ~ d2 g2
+  `)
+    .slow(8)
+    .s("piano")
+    .lpf(350)
+    .gain(.85),
+
+  // left hand: chord shells
+  note(`
+    <
+      [g2,d3,a#3]
+      [c2,g2,d#3]
+      [d2,a2,f#3]
+      [g2,d3,a#3]
+      [d#2,a#2,d#3,g3]
+      [c2,g2,d#3]
+      [d2,a2,f#3]
+      [g2,d3,a#3]
+    >
+  `)
+    .s("piano")
+    .lpf(900)
+    .gain(.45),
+
+  // right hand: main melody
+  note(`
+    d5 a#4 g4 d5
+    d#5 c5 a#4 c5
+    f#5 d5 c5 d5
+    g5 f4 d5 a#4
+    a#5 g5 d#5 c5
+    g5 d#5 c5 a#4
+    d6 a5 f#5 d5
+    a#5 g5 d5 g4
+  `)
+    .slow(8)
+    .s("piano")
+    .gain(.55)
+    .room(.35),
+
+  // right hand: lighter answer melody
+  note(`
+    ~ a#4 ~ g4
+    ~ c5 ~ a#4
+    ~ d5 ~ c5
+    ~ d#5 ~ a#4
+    ~ g5 ~ d#5
+    ~ c5 ~ g4
+    ~ f#5 ~ d5
+    ~ g5 ~ d5
+  `)
+    .slow(8)
+    .s("piano")
+    .lpf(1400)
+    .gain(.28)
+    .pan(.25)
+    .room(.25),
+
+  // upper sparkle from the original high notes
+  note(`
+    [g4,a#4] d5 [g4,d5] a#4
+    [c5,d#5] g5 [c5,g5] d#5
+    [d5,f#5] a5 [f#5,d6] a5
+    [g4,a#4] d5 [g5,a#5] g5
+  `)
+    .slow(8)
+    .s("piano")
+    .gain(.22)
+    .pan(-.25)
+    .room(.55)
+).scope()
