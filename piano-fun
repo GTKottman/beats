@@ -1,0 +1,17 @@
+$:note("<[e5, e4] [e3, e2] e1 b4 [g4, g3, e3] b3 b2 f#4 [g4, g3] e4 e4 [b2, e2] e1 e3 b4 e1 [g4, g3] b2 f#4 e3 [g4, g3] e4 e3 [d#5, d#4, d#3, d#2] d#3 a#4 [g4, d#4, g3] [d#5, d#4, d#3] d#2 [g3, a#2, d#2] [d5, a#3, d#3] d#4 [d#4, g3, d#3] [d5, a#4] [d4, d3, d2] d1 d3 d1 f#3 f#3 f#3 [d2, d1] _ _ _ _>*12")
+  .s("piano")
+  .scope()
+
+  $:note("<[d4, d2] [d5, d3] a2 d2 [c5, c4] d3 [a4, a3] d3 d2 [g3, g2] d3 [a3, g3, d2, c2] c3 c3 [a#4, a#3, g3] d3 c3 a3 d4 [f4, f3] c3 [d4, d3, a#1] a#2 f3 [a#2, f2] a#2 d4 f3 [d3, a#2] a#2 [e4, e3] a#2 f2 a2 [f3, a1] a2 a1 [d4, g3] d3 [a3, c3, c2] a2 c2 a#3 c3 a2 [d5, d4, g3] [d3, d2] d2 d2 [c5, c4] a2 d3 [a3, d3] g3 d3 c2 [a3, g3, d3, d2] c3 d2 [a#4, a#3, g3] a3 f4 f3 c3 f2 g4 d3 [d4, a#2, f2] a#3 a#2 [f4, f3, a#2] a#2 [d3, f2] d4 [e4, e3] a1 [f3, a2] f2 a2 a1 g3 [a2, a1] c2 a2 c2 [a3, g3, a2, a1] c3 c2 a#3 a#4 [a2, d3]>*12")
+  .s("piano")
+  .scope()
+
+
+  setcpm(16)
+
+$:note("<[d#5, c3] d#4 g3 [d#5, c4] [d5, g3] d#5 c4 g3 d#5 d4 d3 a#4 [f5, a#3] d#2 [g5, d#3] d#4 a#2 [g5, d#3] d#4 [f5, a#3, a#2] [g5, g4, d#4, d#3] d#2 a#3 a#2 [g5, d#4] a5>*12")
+  .s("sin, piano")
+  .scope()
+
+
+  
