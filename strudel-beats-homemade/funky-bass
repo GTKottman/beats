@@ -1,0 +1,4 @@
+setcpm(130)
+
+note("<[a2, a1] [a2, a1] f#2 e2 d2 _ f#2 e2 _ d2 f#2 e2 ~ d2 f#2 e2 ~ d2 f#2 e2 _ d2 a1 _ _ f#2 e2 d2 a1 _ f#2 e2 _ d2 [a2, a1] _ _ _ _>*2")
+.sound("sin")
