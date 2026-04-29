@@ -19,20 +19,28 @@ setcpm(130)
 
 const backing = note("<e5 e5 g5 e5 g5 e5 g5 e5 g5 e5 g5 e5 [e5, g5] e5 ~ e5 e5 e5 g5 e5 g5 e5 g5 e5 [e5, g5] e5 [e5, g5] e5 g5 e5 g5 e5 e5 e5 g5 e5 ~ e5 g5 e5 [e5, g5] e5 [e5, g5] e5 e5 e5 ~ e5 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~>")
   .sound("piano")
-  .gain(0.65)
+  .gain(0.85)
   .decay(.6)
   .pan("<0 1>")
 
 const melody = note("<e6*2 ~ ~ ~ d#6*2 ~ ~ ~ c6*2 ~ ~ ~ b5 ~ [a#5 b5] ~ e6*2 ~ ~ ~ d#6*2 ~ ~ ~ c6*2 ~ ~ ~ b5 ~ [a#5 b5] e6 ~ e6*2 ~ d#6 ~ e6*2 ~ c6 ~ ~ ~ b5 ~ a#5 _ _ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~>")
   .sound("piano")
-  .gain(0.85)
+  .gain(0.95)
 
 const leftHand = note("<~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ f#5 b4*2 f#5 b4 f#5*2 b4 b3 f#5*2 b4 b4 [d5, f#5]*2 b4 f#5 d5 b4 _ _ _ ~>")
   .sound("piano")
-  .gain(0.65)
+  .gain(0.75)
+
+const drumline = sound("<bd ~ bd ~ bd bd>/2")
+.bank("compurhythm8000")
+
+const backSin = note("<30 _ _ _>")
+.sound("sin")
 
 stack(
   backing,
   melody,
-  leftHand
+  leftHand,
+  drumline,
+  backSin
 ) 
