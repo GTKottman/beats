@@ -143,17 +143,6 @@ d2@48 ~@106 g5@28 e4@26 ~@14 f#2 ~ e2@49 ~@47 g2@33 g2@20 ~@99 f#4@9 ~@251>`)
 
 _____
 
-
-
-
-
-
-// midi2text -> Strudel  (Dark.mid)
-// voices=18, grid_cells=2099, grid_ticks=32, ppq=384, source BPM=120.00
-// 1 cell = 32 MIDI ticks (quantized)
-// note: 2 note(s) collided on the same grid cell within a voice and were dropped.
-//       this only happens with --grid-divisions/--grid-ticks; remove those flags for native timing.
-
 // === Adjustable parameters (change these, the rest follows) ===
 const tempo     = 70  // cycles per minute (matches source MIDI tempo)
 const transpose = 0       // semitones; +12 = up one octave, -12 = down
